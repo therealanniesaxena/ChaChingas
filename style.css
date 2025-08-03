@@ -1,0 +1,311 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+/* Apply Outfit font globally */
+body {
+ font-family: "Outfit", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
+ background-color: #ebeadf;
+ line-height: 1.6;
+}
+
+
+/* Sticky header */
+header {
+ position: sticky;
+ top: 0;
+ background-color: #6eb53d;
+ color: white;
+ padding: 15px 0;
+ z-index: 1000;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* Header container */
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+.logo {
+ font-size: 2.5rem;
+ font-weight: 700;
+ margin-left: 0;
+}
+
+
+/* Nav links */
+.nav-links a {
+ color: white;
+ text-decoration: none;
+ margin-left: 20px;
+ font-weight: 500;
+ padding: 10px 15px;
+ transition: background-color 0.3s ease;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+ background-color: #8fcf5d;
+}
+
+
+/* Main content */
+main {
+ padding: 0;
+ margin: 0;
+ flex: 1;
+ background-color: #ebeadf;
+}
+
+
+/* Full width image */
+.full-width-image {
+ width: 100vw;
+ position: relative;
+ left: 50%;
+ right: 50%;
+ margin-left: -50vw;
+ margin-right: -50vw;
+ overflow: hidden;
+}
+
+
+.full-width-image img {
+ width: 100%;
+ height: auto;
+ display: block;
+}
+
+
+/* Page sections */
+.page-section {
+ display: none;
+ padding: 0;
+ font-size: 2rem;
+ background-color: #ebeadf;
+}
+
+
+.page-section:not(.hidden) {
+ display: block;
+}
+
+
+/* Home content (text below image) */
+.home-content {
+ text-align: center;
+ max-width: 1000px;
+ margin: auto;
+}
+
+
+.introduction {
+ max-width: 1000px;
+ margin: 40px auto;
+ padding: 20px;
+ font-size: 1rem;
+ line-height: 1.6;
+}
+
+
+.introduction h2 {
+ font-size: 1.8rem;
+ margin-bottom: 15px;
+ color: #1e7e34;
+}
+
+
+.introduction ul {
+ margin-top: 20px;
+ padding-left: 35px;
+}
+
+
+.introduction li {
+ margin-bottom: 10px;
+}
+
+
+.introduction p {
+ margin-bottom: 15px;
+}
+
+
+.class-start-button {
+ text-align: center;
+ margin: 40px 0;
+ margin-bottom: 50px;
+}
+
+
+.start-button {
+ background-color: #6eb53d;
+ color: white;
+ font-size: 1.7rem;
+ padding: 20px 30px;
+ border: none;
+ border-radius: 15px;
+ font-family: Outfit;
+ transition: background-color 0.3s ease;
+}
+
+
+.start-button:hover {
+ background-color: #8fcf5d;
+}
+
+
+.footer {
+ background-color: #003101;
+ padding: 20px 40px;
+ position: relative;
+}
+
+
+.footer-content {
+ position: relative;
+ text-align: center;
+ color: #b0cf8d;
+}
+
+
+.footer-center-text {
+ margin: 10px;
+ font-size: 1.5rem;
+}
+
+
+.privacy-link {
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ margin: 10px 20px;
+ text-decoration: underline;
+ color: inherit;
+ font-size: 0.9rem;
+}
+
+
+.spotify {
+ margin-left: 150px;
+ margin-right: 150px;
+ margin-bottom: 40px;
+}
+
+
+/* Sticky footer layout using Flexbox */
+html, body {
+ height: 100%;
+}
+
+
+.page-wrapper {
+ min-height: 100%;
+ display: flex;
+ flex-direction: column;
+ background-color: #ebeadf;
+}
+
+
+/* Contact/team section */
+.team-photo {
+ display: flex;
+ justify-content: center;
+ margin: 0rem 0 0rem; /* Top margin reduced */
+}
+
+
+.team-photo img {
+ max-width: 80%;
+ height: auto;
+ border-radius: 12px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ margin-top: 0;
+ padding-top: 0;
+}
+
+
+.team-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ padding: 2rem;
+ gap: 2rem;
+ text-align: center;
+ background-color: #ebeadf;
+}
+
+
+.team-member {
+ flex: 1 1 250px;
+ max-width: 300px;
+ margin: 20px;
+ padding: 20px;
+ background-color: white;
+ border-radius: 15px;
+ box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.team-member h3 {
+ margin-bottom: 10px;
+ font-size: 1.2rem;
+ color: #4a6d49;
+}
+
+
+.team-member p {
+ font-size: 0.95rem;
+ line-height: 1.5;
+}
+
+
+
+
+#chatbot {
+ display: flex;
+ justify-content: center; /* center horizontally */
+ align-items: center;     /* center vertically */
+ height: 100vh;           /* full viewport height */
+ padding: 20px;           /* optional padding */
+ box-sizing: border-box;  /* include padding in height */
+ background-color: #ebeadf; /* optional: keep consistent background */
+}
+
+
+#chatbot iframe {
+ max-width: 100%;
+ max-height: 100%;
+ border: none;
+ border-radius: 12px; /* optional rounded corners */
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+
+
+
+.hidden {
+ display: none !important;
+}
+
+
+
+
+
+
+
+
