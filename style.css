@@ -255,7 +255,7 @@ html, body {
  max-width: 300px;
  margin: 20px;
  padding: 20px;
- background-color: white;
+ background-color: #f0f0f0;
  border-radius: 15px;
  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -273,6 +273,23 @@ html, body {
  line-height: 1.5;
 }
 
+.contact-box {
+  margin: 30px auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  background-color: #f0f0f0;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box a {
+  color: #007a5e; /* your green or accent color */
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 
@@ -301,6 +318,7 @@ html, body {
 .hidden {
  display: none !important;
 }
+
 
 
 
